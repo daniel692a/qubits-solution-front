@@ -4,7 +4,16 @@ body {
     box-sizing: border-box;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url(./fonts/FiraSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'FiraSans Thin';
+    src: url(./fonts/FiraSans-Thin.ttf);
 }
