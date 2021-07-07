@@ -5,30 +5,34 @@ import './Header.css';
 const Header = () => {
     const [state, setActive] = useState('');
     const mobileMenu = () => {
-        setActive('active');
+        if(state === ''){
+            setActive('active');
+        } else {
+            setActive('');
+        }
     }
     return (
         <header>
             <nav className='navbar'>
                 <ul className={`nav-menu ${state}`} >
-                    <li className='nav-item'>
-                        <Link to='/Login'>
+                    <li className='nav-item' onClick={mobileMenu}>
+                        <Link to='/signup'>
                             Sign Up
                         </Link>
                     </li>
-                    <li className='nav-item'>
-                        <Link to='nav-link'>
+                    <li className='nav-item' onClick={mobileMenu}>
+                        <Link to='/signin'>
                             Sign In
                         </Link>
                     </li>
-                    <li className='nav-item'>
-                        <Link to='nav-link'>
+                    <li className='nav-item' onClick={mobileMenu}>
+                        <Link to='/about'>
                             About
                         </Link>
                     </li>
                 </ul>
             </nav>
-            <div className={`hamburguer ${state}`}  onClick={mobileMenu}>
+            <div className={`hamburger ${state}`}  onClick={mobileMenu}>
                 <span className={`bar ${state}`}></span>
                 <span className={`bar ${state}`}></span>
                 <span className={`bar ${state}`}></span>

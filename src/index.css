@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-}
 
 @font-face {
     font-family: 'FiraSans';
@@ -16,4 +13,8 @@ html {
 @font-face {
     font-family: 'FiraSans Thin';
     src: url(./fonts/FiraSans-Thin.ttf);
+}
+html {
+    font-size: 62.5%;
+    font-family: FiraSans, sans-serif;
 }
