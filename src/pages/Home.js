@@ -52,38 +52,6 @@ const Home = () => {
                         image={Piel}
                         description='Cuidado de la piel'
                     />
-                {/* <section className='products-container'>
-                    <section className='card-product'>
-                        <figure>
-                            <img src={Cafe} alt=''/>
-                        </figure>
-                        <h4>Café</h4>
-                    </section>
-                    <section className='card-product'>
-                        <figure>
-                            <img src={Miel} alt=''/>
-                        </figure>
-                        <h4>Miel</h4>
-                    </section>
-                    <section className='card-product'>
-                        <figure>
-                            <img src={Piel} alt=''/>
-                        </figure>
-                        <h4>Cuidado de la piel</h4>
-                    </section>
-                    <section className='card-product'>
-                        <figure>
-                            <img src={Arte} alt=''/>
-                        </figure>
-                        <h4>Artesanías</h4>
-                    </section>
-                    <section className='card-product'>
-                        <figure>
-                            <img src={Herbolaria} alt=''/>
-                        </figure>
-                        <h4>Herbolaria</h4>
-                    </section>
-                </section> */}
             </section>
         </>
     )
