@@ -15,18 +15,11 @@ const Home = () => {
                 <figure>
                     <img src={Shop} alt='Comercio Electrónico'/>
                 </figure>
-                <h2>Obio es la plataforma que promueve el consumo de productos orgánicos hechos en México</h2>
-            </section>
-
-            <section className='description'>
-                <h3>Orgánico</h3>
-                <h3>Natural</h3>
-                <h3>Justo</h3>
-                <h3>¡Es Obio!</h3>
+                <h2>Obio es la plataforma que promueve el consumo de productos orgánicos hechos en México.</h2>
             </section>
 
             <section className="products">
-                <h3>Conoce nuestros productos</h3>
+                <h3>Conoce nuestros productos:</h3>
                     <Card
                         product='Café'
                         image={Cafe}
@@ -52,6 +45,13 @@ const Home = () => {
                         image={Piel}
                         description='Cuidado de la piel'
                     />
+            </section>
+
+            <section className='description'>
+                <h3>Orgánico</h3>
+                <h3>Natural</h3>
+                <h3>Justo</h3>
+                <h3>¡Es Obio!</h3>
             </section>
         </>
     )

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Sigin.css';
+import './Signin.css';
 import Login from '../assets/signin.svg';
 import Close from '../assets/eye-close.svg';
 import Eye from '../assets/eye.svg';
@@ -7,7 +7,6 @@ import Eye from '../assets/eye.svg';
 const Signin = () => {
     const [visible, setVisible] = useState('password');
     const changeIcon = () => {
-        const form = document.querySelector('.sigin-form');
         const passwordInput = document.querySelector('#icon');
         if(visible==='text'){
             passwordInput.src=Close;
@@ -15,18 +14,19 @@ const Signin = () => {
             passwordInput.src=Eye;
         }
     }
-    const changeState = () => {
+    const changeState = (e) => {
         if(visible==='password') {
             setVisible('text');
         } else {
             setVisible('password');
         }
         changeIcon();
+        e.preventDefault();
     }
     return (
         <>
-            <h1>Iniciar Sesión</h1>
-            <figure>
+            <h1 className='signin-title'>Iniciar Sesión</h1>
+            <figure className='sigin-img'>
                 <img src={Login} alt='Usuario iniciando sesión'/>
             </figure>
             <form className='sigin-form' action='#'>
@@ -36,7 +36,7 @@ const Signin = () => {
                 </label>
                 <label for='password'>
                     <span>Contraseña:</span>
-                    <input type={visible} placeholder='Contraseña' autoComplete='new-password' id='password' required /><button onClick={changeState}><img src={Eye} id='icon' alt='Mostrar contraseña'/></button>
+                    <input type={visible} placeholder='Contraseña' autoComplete='current-password' id='password' required /><button onClick={changeState}><img src={Eye} id='icon' alt='Mostrar contraseña'/></button>
                 </label>
                 <input type='submit' value='Entrar'/>
             </form>

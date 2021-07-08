@@ -1,13 +1,13 @@
-h1 {
+h1.signin-title {
     text-align: center;
     font-size: 4rem;
     margin-top: 5rem;
 }
-figure{
+figure.sigin-img{
     margin: 3rem auto;
     width: 20rem;
 }
-img{
+figure.sigin-img img{
     width: 100%;
 }
 .sigin-form{
@@ -17,10 +17,12 @@ img{
     flex-direction: column;
     font-size: 1.8rem;
 }
-label{
+.sigin-form label{
     margin: 1rem 0;
 }
-input[type=email], input[type=password], input[type=text] {
+.sigin-form input[type=email],
+.sigin-form input[type=password],
+.sigin-form input[type=text] {
     margin-left: 1rem;
     border-top: 0;
     border-left: 0;
@@ -28,13 +30,13 @@ input[type=email], input[type=password], input[type=text] {
     border-bottom: 2px solid #bd9a5f;
     outline: none;
 }
-button {
+.sigin-form button {
     background: transparent;
     outline: none;
     border: none;
     transition: all 0.5s ease;
 }
-input[type=submit] {
+.sigin-form input[type=submit] {
     background-color: #bd9a5f;
     color: #fff;
     font-size: 2rem;
@@ -47,6 +49,6 @@ input[type=submit] {
     transition: all 0.3s ease;
 }
 
-input[type=submit]:hover {
-    background-color: #a38550;
+.sigin-form input[type=submit]:hover {
+    background-color: #6d5937;
 }

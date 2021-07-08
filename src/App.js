@@ -1,9 +1,9 @@
 import React from "react";
 import Home from './pages/Home';
-import Register from './pages/Register';
 import Header from './components/Header';
+import Signup from './pages/Signup';
+import Signin from "./pages/Signin";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Signin from "./pages/Sigin";
 
 function App() {
     return (
@@ -11,7 +11,7 @@ function App() {
             <Header />
             <Switch>
                 <Route path='/signup'>
-                    <Register />
+                    <Signup />
                 </Route>
                 <Route path='/signin'>
                     <Signin />
